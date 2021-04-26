@@ -4,14 +4,14 @@ from django.shortcuts import render
 # Create your views here.
 def index(request):
     context = {
-        'title': 'GeekShop'
+        'title': 'geekShop'
     }
     return render(request, 'mainapp/index.html', context)
 
 
 def products(request):
     context = {
-        'title': 'GeekShop - Каталог',
+        'title': 'geekShop - каталог',
         'products': [
             {'name': 'Худи черного цвета с монограммами adidas Originals', 'description': 'Мягкая ткань для свитшотов. Стиль и комфорт – это образ жизни.',
              'img': 'vendor/img/products/Adidas-hoodie.png', 'price': 6090.00},
